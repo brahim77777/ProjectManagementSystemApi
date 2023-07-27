@@ -29,7 +29,3 @@ Route::apiResource('tasks' , TaskController::class)->middleware('auth:api');
 
 
 Route::get('/login' , [LoginController::class , 'login']);
-// Route::fallback(function () {
-//     report(new Exception());
-//     return response('This Url Is Not Defined' , 404);
-// } );
